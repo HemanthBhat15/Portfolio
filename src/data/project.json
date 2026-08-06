@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "title": "Financial Dashboard",
+    "description": "A dashboard built with Recharts, Finnhub API, and WebSocket for live financial data.",
+    "tech": ["React.js", "Recharts", "Finnhub API", "WebSocket"],
+    "link": "https://financial-dashboard-five-delta.vercel.app"
+  },
+  {
+    "id": "2",
+    "title": "Shopping Cart",
+    "description": "A shopping cart application with authentication and global state management ie Redux.",
+    "tech": ["React.js", "Redux Toolkit", "JWT Auth"],
+    "link": "https://shopping-cart-redux-1ou9.vercel.app/"
+  }
+]

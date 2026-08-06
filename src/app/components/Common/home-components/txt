@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Hemanth Bhat | Frontend Developer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Material Symbols -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2563eb",
+              surface: "#0b1326",
+              "surface-container": "#171f33",
+              "on-surface": "#dae2fd",
+              "on-surface-variant": "#94a3b8",
+              "outline-variant": "#1e293b",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "element-gap": "1rem",
+              "section-gap-lg": "6rem",
+              gutter: "1.5rem",
+              "container-max": "1280px",
+            },
+            fontFamily: {
+              body: ["Inter", "sans-serif"],
+              display: ["Hanken Grotesk", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        background-color: #0b1326;
+        color: #dae2fd;
+        font-family: "Inter", sans-serif;
+        scroll-behavior: smooth;
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+    </style>
+  </head>
+  <body class="selection:bg-primary selection:text-white">
+    <!-- Header -->
+    <header
+      class="sticky top-0 w-full z-50 bg-surface/90 backdrop-blur-sm border-b border-outline-variant/30"
+    >
+      <div
+        class="max-w-7xl mx-auto px-gutter flex justify-between items-center h-16"
+      >
+        <!-- Brand Logo -->
+        <div class="flex items-center gap-2">
+          <span
+            class="material-symbols-outlined text-white text-2xl"
+            data-icon="play_circle"
+            >play_circle</span
+          >
+          <span class="font-display font-bold text-xl tracking-tight text-white"
+            >Hemanth Bhat</span
+          >
+        </div>
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-8">
+          <a
+            class="text-on-surface text-sm font-medium hover:text-primary transition-colors"
+            href="#home"
+            >Home</a
+          >
+          <a
+            class="text-on-surface-variant text-sm font-medium hover:text-primary transition-colors"
+            href="#about"
+            >About</a
+          >
+          <a
+            class="text-on-surface-variant text-sm font-medium hover:text-primary transition-colors border-b-2 border-primary py-1"
+            href="#projects"
+            >Projects</a
+          >
+          <a
+            class="text-on-surface-variant text-sm font-medium hover:text-primary transition-colors"
+            href="#contact"
+            >Contact</a
+          >
+        </nav>
+        <!-- Action -->
+        <button
+          class="bg-primary text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-blue-600 transition-all"
+        >
+          Get In Touch
+        </button>
+      </div>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="min-h-[70vh] flex flex-col items-center justify-center text-center px-gutter py-20"
+        id="home"
+      >
+        <div class="max-w-3xl mx-auto">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container border border-outline-variant text-xs text-on-surface-variant mb-10"
+          >
+            <span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
+            <span class="">Available for new opportunities</span>
+          </div>
+          <h1
+            class="font-display text-4xl md:text-6xl font-extrabold text-white mb-6"
+          >
+            Hi, I'm <span class="text-primary">Hemanth Bhat</span>
+          </h1>
+          <p
+            class="text-lg md:text-xl text-on-surface-variant mb-10 leading-relaxed"
+          >
+            Frontend Developer specializing in
+            <span class="text-white font-medium">React.js</span>,
+            <span class="text-white font-medium">Next.js</span>, and
+            <span class="text-white font-medium">TypeScript</span>. Building
+            high-performance, scalable web architectures.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center gap-4"
+          >
+            <button
+              class="w-full sm:w-auto bg-primary text-white px-8 py-3.5 rounded-lg font-semibold hover:bg-blue-600 transition-all flex items-center justify-center gap-2"
+            >
+              Get In Touch
+              <span
+                class="material-symbols-outlined text-sm"
+                data-icon="arrow_forward"
+                >arrow_forward</span
+              >
+            </button>
+            <button
+              class="w-full sm:w-auto px-8 py-3.5 rounded-lg font-semibold border border-outline-variant text-on-surface hover:bg-surface-container transition-all"
+            >
+              Download CV
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Tech Stack Section -->
+      <section class="max-w-7xl mx-auto px-gutter py-20" id="about">
+        <div class="flex flex-col md:flex-row gap-12 items-start">
+          <div class="w-full md:w-1/3">
+            <h2 class="font-display text-3xl font-bold text-white mb-4">
+              My Tech Stack
+            </h2>
+            <p class="text-on-surface-variant">
+              I leverage a modern toolset to build resilient, fast, and
+              accessible digital products.
+            </p>
+          </div>
+          <div class="w-full md:w-2/3 flex flex-wrap gap-3">
+            <div
+              class="px-4 py-2 rounded-lg bg-surface-container border border-outline-variant flex items-center gap-2"
+            >
+              <span
+                class="material-symbols-outlined text-primary text-sm"
+                data-icon="code"
+                >code</span
+              >
+              <span class="text-sm font-medium">React.js</span>
+            </div>
+            <div
+              class="px-4 py-2 rounded-lg bg-surface-container border border-outline-variant flex items-center gap-2"
+            >
+              <span
+                class="material-symbols-outlined text-primary text-sm"
+                data-icon="bolt"
+                >bolt</span
+              >
+              <span class="text-sm font-medium">Next.js</span>
+            </div>
+            <div
+              class="px-4 py-2 rounded-lg bg-surface-container border border-outline-variant flex items-center gap-2"
+            >
+              <span
+                class="material-symbols-outlined text-primary text-sm"
+                data-icon="javascript"
+                >javascript</span
+              >
+              <span class="text-sm font-medium">TypeScript</span>
+            </div>
+            <div
+              class="px-4 py-2 rounded-lg bg-surface-container border border-outline-variant flex items-center gap-2"
+            >
+              <span
+                class="material-symbols-outlined text-primary text-sm"
+                data-icon="terminal"
+                >terminal</span
+              >
+              <span class="text-sm font-medium">JavaScript ES6+</span>
+            </div>
+            <div
+              class="px-4 py-2 rounded-lg bg-surface-container border border-outline-variant flex items-center gap-2"
+            >
+              <span
+                class="material-symbols-outlined text-primary text-sm"
+                data-icon="layers"
+                >layers</span
+              >
+              <span class="text-sm font-medium">Redux Toolkit</span>
+            </div>
+            <div
+              class="px-4 py-2 rounded-lg bg-surface-container border border-outline-variant flex items-center gap-2"
+            >
+              <span
+                class="material-symbols-outlined text-primary text-sm"
+                data-icon="palette"
+                >palette</span
+              >
+              <span class="text-sm font-medium">Tailwind CSS</span>
+            </div>
+            <div
+              class="px-4 py-2 rounded-lg bg-surface-container border border-outline-variant flex items-center gap-2"
+            >
+              <span
+                class="material-symbols-outlined text-primary text-sm"
+                data-icon="api"
+                >api</span
+              >
+              <span class="text-sm font-medium">REST</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Featured Projects Section -->
+      <section class="bg-[#0f172a] py-20" id="projects">
+        <div class="max-w-7xl mx-auto px-gutter">
+          <div class="flex justify-between items-end mb-12">
+            <div>
+              <span
+                class="text-primary text-xs font-bold tracking-widest uppercase mb-2 block"
+                >Portfolio</span
+              >
+              <h2 class="font-display text-4xl font-bold text-white">
+                Featured Projects
+              </h2>
+            </div>
+            <a
+              class="hidden md:flex items-center gap-2 text-on-surface-variant hover:text-white transition-all text-sm font-medium"
+              href="#"
+            >
+              View All Work
+              <span
+                class="material-symbols-outlined text-sm"
+                data-icon="north_east"
+                >north_east</span
+              >
+            </a>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Project Card 1 -->
+            <div
+              class="flex flex-col bg-surface border border-outline-variant rounded-xl overflow-hidden hover:border-primary/50 transition-colors"
+            >
+              <div class="h-64 overflow-hidden">
+                <img
+                  class="w-full h-full object-cover"
+                  data-alt="Enterprise dashboard interface"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNdYsx_BJi2nRMfhi-gkNu4dNNF7I6xRi4urDyfOxKSLn80ydETZXNnjwSrLLtZoIiqFMMzWxipE7wNH0CVeE_gARQsVOP28F1Tnn0hWyjhq92LEKAPFV3jfDPA3SmEngJRBSnKqqn7YOsXyIgzZYmvkg0kyWGa6DD8RIbuFQwSelmpqQIUSL0d1URuQDlWCUt3QsbpPZ7UvWsp7XzyXNPu-1dDZfgYL7JqG37pE9NjgqO0-N9-1EFwtATIW-J0WAlIBkvrjFK3-qL"
+                />
+              </div>
+              <div class="p-6">
+                <div class="flex gap-2 mb-4">
+                  <span
+                    class="px-2 py-0.5 bg-blue-900/40 text-blue-400 text-[10px] rounded uppercase font-bold"
+                    >React</span
+                  >
+                  <span
+                    class="px-2 py-0.5 bg-blue-900/40 text-blue-400 text-[10px] rounded uppercase font-bold"
+                    >D3.js</span
+                  >
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">
+                  Enterprise Dashboard
+                </h3>
+                <p class="text-on-surface-variant text-sm mb-6 leading-relaxed">
+                  A full-scale administrative panel with real-time data
+                  streaming and complex data visualization components.
+                </p>
+                <a
+                  class="inline-flex items-center gap-1 text-white text-sm font-semibold hover:text-primary transition-all"
+                  href="#"
+                >
+                  View Project
+                  <span
+                    class="material-symbols-outlined text-sm"
+                    data-icon="arrow_right_alt"
+                    >arrow_right_alt</span
+                  >
+                </a>
+              </div>
+            </div>
+            <!-- Project Card 2 -->
+            <div
+              class="flex flex-col bg-surface border border-outline-variant rounded-xl overflow-hidden hover:border-primary/50 transition-colors"
+            >
+              <div class="h-64 overflow-hidden">
+                <img
+                  class="w-full h-full object-cover"
+                  data-alt="E-commerce storefront design"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkOecqOQ68K5Z1OKBH0_94h8jJql1yuefubQ_zWKr4o8XDDJeZFIIuPnithtAlMAkL8K3vACFEp1T9czvML7bP-7bORx7Q4NPqca-Cdft_PXx-Dlg2QkbLziAQ6dqxo3nyq2Os_avhdk5Y_zIC3z2qG6gwJJ0GstbChvJon2rvZ82nRQaq6hHDMmHPilZFHM0tqi5PM1T-L9wD-oiRMlIlDOX4DL7cGFnrR0lgLFiToaULao1SV3zBegC1SDN3bMYellIyjO0lImQY"
+                />
+              </div>
+              <div class="p-6">
+                <div class="flex gap-2 mb-4">
+                  <span
+                    class="px-2 py-0.5 bg-blue-900/40 text-blue-400 text-[10px] rounded uppercase font-bold"
+                    >Next.js</span
+                  >
+                  <span
+                    class="px-2 py-0.5 bg-blue-900/40 text-blue-400 text-[10px] rounded uppercase font-bold"
+                    >Stripe</span
+                  >
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">
+                  E-Commerce Architecture
+                </h3>
+                <p class="text-on-surface-variant text-sm mb-6 leading-relaxed">
+                  A headless commerce solution focused on Core Web Vitals and
+                  SEO optimization with a seamless checkout flow.
+                </p>
+                <a
+                  class="inline-flex items-center gap-1 text-white text-sm font-semibold hover:text-primary transition-all"
+                  href="#"
+                >
+                  View Project
+                  <span
+                    class="material-symbols-outlined text-sm"
+                    data-icon="arrow_right_alt"
+                    >arrow_right_alt</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CTA Section -->
+      <section
+        class="max-w-7xl mx-auto px-gutter py-20 text-center"
+        id="contact"
+      >
+        <div
+          class="bg-surface-container border border-outline-variant rounded-2xl p-12 md:p-20"
+        >
+          <h2
+            class="font-display text-4xl md:text-5xl font-bold text-white mb-6"
+          >
+            Let's build something incredible together.
+          </h2>
+          <p class="text-on-surface-variant mb-12 max-w-xl mx-auto">
+            Currently open to new projects and frontend-focused roles. Drop me a
+            message to discuss your next big idea.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <button
+              class="bg-primary text-white px-10 py-4 rounded-xl font-semibold hover:bg-blue-600 transition-all flex items-center justify-center gap-3"
+            >
+              <span class="material-symbols-outlined text-xl" data-icon="mail"
+                >mail</span
+              >
+              hemanth@bhat.dev
+            </button>
+            <button
+              class="bg-[#1e293b] text-white px-10 py-4 rounded-xl font-semibold hover:bg-[#2d3a4f] transition-all flex items-center justify-center gap-3"
+            >
+              <span
+                class="material-symbols-outlined text-xl"
+                data-icon="schedule"
+                >schedule</span
+              >
+              Book a Call
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full py-12 border-t border-outline-variant">
+      <div
+        class="max-w-7xl mx-auto px-gutter flex flex-col md:flex-row justify-between items-center gap-6"
+      >
+        <div class="flex flex-col items-center md:items-start gap-2">
+          <div
+            class="font-display text-white text-xl font-bold flex items-center gap-2"
+          >
+            <span class="material-symbols-outlined" data-icon="play_circle"
+              >play_circle</span
+            >
+            Hemanth Bhat
+          </div>
+          <p class="text-xs text-on-surface-variant">
+            © 2024 Hemanth Bhat. Built with precision.
+          </p>
+        </div>
+        <div class="flex items-center gap-8">
+          <a
+            class="text-on-surface-variant hover:text-white transition-colors text-xs font-medium"
+            href="#"
+            >Github</a
+          >
+          <a
+            class="text-on-surface-variant hover:text-white transition-colors text-xs font-medium"
+            href="#"
+            >LinkedIn</a
+          >
+          <a
+            class="text-on-surface-variant hover:text-white transition-colors text-xs font-medium"
+            href="#"
+            >Twitter</a
+          >
+        </div>
+        <button
+          class="w-8 h-8 rounded bg-surface-container border border-outline-variant flex items-center justify-center text-on-surface-variant hover:text-white transition-all"
+          onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+        >
+          <span
+            class="material-symbols-outlined text-sm"
+            data-icon="arrow_upward"
+            >arrow_upward</span
+          >
+        </button>
+        <!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hemanth Bhat | Frontend Developer</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#ffdbcd",
+                    "secondary-container": "#0566d9",
+                    "on-primary": "#002a78",
+                    "on-tertiary-fixed-variant": "#7d2d00",
+                    "on-primary-fixed": "#00174b",
+                    "surface-container-lowest": "#060e20",
+                    "surface-bright": "#31394d",
+                    "secondary": "#adc6ff",
+                    "on-secondary-fixed": "#001a42",
+                    "primary-fixed-dim": "#b4c5ff",
+                    "secondary-fixed": "#d8e2ff",
+                    "on-surface": "#dae2fd",
+                    "error-container": "#93000a",
+                    "on-tertiary-container": "#ffede6",
+                    "tertiary-fixed-dim": "#ffb596",
+                    "tertiary-container": "#bc4800",
+                    "on-primary-container": "#eeefff",
+                    "surface-variant": "#2d3449",
+                    "on-background": "#dae2fd",
+                    "on-surface-variant": "#c3c6d7",
+                    "outline-variant": "#434655",
+                    "background": "#0b1326",
+                    "primary": "#b4c5ff",
+                    "primary-container": "#2563eb",
+                    "secondary-fixed-dim": "#adc6ff",
+                    "on-primary-fixed-variant": "#003ea8",
+                    "primary-fixed": "#dbe1ff",
+                    "on-tertiary-fixed": "#360f00",
+                    "error": "#ffb4ab",
+                    "tertiary": "#ffb596",
+                    "on-tertiary": "#581e00",
+                    "on-secondary-container": "#e6ecff",
+                    "on-error": "#690005",
+                    "on-error-container": "#ffdad6",
+                    "surface-container": "#171f33",
+                    "surface-tint": "#b4c5ff",
+                    "surface-container-low": "#131b2e",
+                    "outline": "#8d90a0",
+                    "on-secondary": "#002e6a",
+                    "surface-container-high": "#222a3d",
+                    "surface-container-highest": "#2d3449",
+                    "inverse-surface": "#dae2fd",
+                    "on-secondary-fixed-variant": "#004395",
+                    "inverse-primary": "#0053db",
+                    "inverse-on-surface": "#283044",
+                    "surface-dim": "#0b1326",
+                    "surface": "#0b1326"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "element-gap": "1rem",
+                    "section-gap-lg": "8rem",
+                    "gutter": "1.5rem",
+                    "container-max": "1280px",
+                    "section-gap-md": "4rem"
+            },
+            "fontFamily": {
+                    "body-md": ["Inter"],
+                    "headline-md": ["Hanken Grotesk"],
+                    "display-lg": ["Hanken Grotesk"],
+                    "body-lg": ["Inter"],
+                    "display-lg-mobile": ["Hanken Grotesk"],
+                    "label-sm": ["Inter"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "label-sm": ["14px", {"lineHeight": "1", "letterSpacing": "0.01em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #0b1326;
+            color: #dae2fd;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(23, 31, 51, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(67, 70, 85, 0.5);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: #2563eb;
+            transform: translateY(-4px);
+        }
+        .tech-tag {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .tech-tag:hover {
+            background-color: #2563eb;
+            color: #eeefff;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="selection:bg-primary-container selection:text-white">
+<!-- TopAppBar -->
+<header class="sticky top-0 w-full z-50 bg-surface/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-gutter flex justify-between items-center h-20">
+<!-- Brand Logo -->
+<div class="text-headline-md font-display-lg text-on-surface dark:text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="play_circle">play_circle</span>
+<span class="font-extrabold tracking-tight">Flowbite</span>
+</div>
+<!-- Desktop Navigation -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary dark:text-primary font-bold border-b-2 border-primary py-1 font-body-md text-body-md" href="#home">Home</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#about">About</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#projects">Projects</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#contact">Contact</a>
+</nav>
+<!-- Action -->
+<button class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-lg font-label-sm text-label-sm hover:brightness-110 transition-all shadow-lg shadow-primary-container/20">
+                Get In Touch
+            </button>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[819px] flex flex-col items-center justify-center text-center px-gutter pt-20 overflow-hidden" id="home">
+<!-- Atmospheric Shader Background -->
+
+<div class="relative z-10 max-w-4xl mx-auto">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-high border border-outline-variant text-primary mb-8 animate-pulse">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm">Available for new opportunities</span>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6 leading-tight">
+                    Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-primary-fixed">Hemanth Bhat</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl mx-auto">
+                    Frontend Developer specializing in <span class="text-on-surface font-semibold">React.js</span>, <span class="text-on-surface font-semibold">Next.js</span>, and <span class="text-on-surface font-semibold">TypeScript</span>. Building high-performance, scalable web architectures.
+                </p>
+<div class="flex flex-col md:flex-row items-center justify-center gap-4">
+<button class="w-full md:w-auto bg-primary-container text-on-primary-container px-10 py-4 rounded-xl font-headline-md text-headline-md hover:brightness-110 transition-all shadow-xl shadow-primary-container/30 flex items-center justify-center gap-2">
+                        Get In Touch
+                        <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<button class="w-full md:w-auto px-10 py-4 rounded-xl font-headline-md text-headline-md border border-outline-variant hover:bg-surface-variant/30 transition-all">
+                        Download CV
+                    </button>
+</div>
+</div>
+</section>
+<!-- Tech Stack Section -->
+<section class="max-w-7xl mx-auto px-gutter py-section-gap-lg" id="about">
+<div class="flex flex-col md:flex-row gap-12 items-start">
+<div class="md:sticky md:top-32 w-full md:w-1/3">
+<h2 class="font-display-lg text-display-lg text-on-surface mb-4">My Tech Stack</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        I leverage a modern toolset to build resilient, fast, and accessible digital products. Each technology is chosen for its performance and developer experience.
+                    </p>
+</div>
+<div class="w-full md:w-2/3 flex flex-wrap gap-4">
+<!-- Iterative Tech Tags -->
+<div class="tech-tag px-6 py-4 rounded-xl glass-card flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="code">code</span>
+<span class="font-headline-md text-headline-md">React.js</span>
+</div>
+<div class="tech-tag px-6 py-4 rounded-xl glass-card flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="bolt">bolt</span>
+<span class="font-headline-md text-headline-md">Next.js</span>
+</div>
+<div class="tech-tag px-6 py-4 rounded-xl glass-card flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="javascript">javascript</span>
+<span class="font-headline-md text-headline-md">TypeScript</span>
+</div>
+<div class="tech-tag px-6 py-4 rounded-xl glass-card flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="terminal">terminal</span>
+<span class="font-headline-md text-headline-md">JavaScript ES6+</span>
+</div>
+<div class="tech-tag px-6 py-4 rounded-xl glass-card flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="layers">layers</span>
+<span class="font-headline-md text-headline-md">Redux Toolkit</span>
+</div>
+<div class="tech-tag px-6 py-4 rounded-xl glass-card flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="palette">palette</span>
+<span class="font-headline-md text-headline-md">Tailwind CSS</span>
+</div>
+<div class="tech-tag px-6 py-4 rounded-xl glass-card flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="api">api</span>
+<span class="font-headline-md text-headline-md">REST</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Projects Section -->
+<section class="bg-surface-container-low py-section-gap-lg" id="projects">
+<div class="max-w-7xl mx-auto px-gutter">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="text-primary font-label-sm text-label-sm tracking-widest uppercase mb-2 block">Portfolio</span>
+<h2 class="font-display-lg text-display-lg text-on-surface">Featured Projects</h2>
+</div>
+<button class="hidden md:flex items-center gap-2 text-primary font-body-md text-body-md hover:underline decoration-2 underline-offset-8 transition-all">
+                        View All Work
+                        <span class="material-symbols-outlined" data-icon="north_east">north_east</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<!-- Project Card 1 -->
+<div class="group flex flex-col glass-card rounded-2xl overflow-hidden">
+<div class="relative h-72 overflow-hidden">
+<div class="absolute inset-0 bg-primary-container/10 group-hover:bg-primary-container/0 transition-colors z-10"></div>
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A clean, sophisticated user interface for an enterprise dashboard. It features dark navy blue tones with glowing blue line charts and data visualizations. The layout is a modern bento grid with high-contrast text and a professional, tech-focused aesthetic typical of a high-end SaaS product." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNdYsx_BJi2nRMfhi-gkNu4dNNF7I6xRi4urDyfOxKSLn80ydETZXNnjwSrLLtZoIiqFMMzWxipE7wNH0CVeE_gARQsVOP28F1Tnn0hWyjhq92LEKAPFV3jfDPA3SmEngJRBSnKqqn7YOsXyIgzZYmvkg0kyWGa6DD8RIbuFQwSelmpqQIUSL0d1URuQDlWCUt3QsbpPZ7UvWsp7XzyXNPu-1dDZfgYL7JqG37pE9NjgqO0-N9-1EFwtATIW-J0WAlIBkvrjFK3-qL"/>
+</div>
+<div class="p-8">
+<div class="flex gap-2 mb-4">
+<span class="px-3 py-1 bg-primary-container/20 text-primary text-xs rounded-full font-semibold">React</span>
+<span class="px-3 py-1 bg-primary-container/20 text-primary text-xs rounded-full font-semibold">D3.js</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Enterprise Dashboard</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                                A full-scale administrative panel with real-time data streaming and complex data visualization components.
+                            </p>
+<a class="inline-flex items-center gap-2 text-primary font-semibold hover:gap-4 transition-all" href="#">
+                                View Project
+                                <span class="material-symbols-outlined" data-icon="arrow_right_alt">arrow_right_alt</span>
+</a>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group flex flex-col glass-card rounded-2xl overflow-hidden">
+<div class="relative h-72 overflow-hidden">
+<div class="absolute inset-0 bg-primary-container/10 group-hover:bg-primary-container/0 transition-colors z-10"></div>
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A minimalist e-commerce storefront landing page featuring high-quality photography of premium tech gadgets. The design uses a deep space dark theme with vibrant blue call-to-action buttons. It showcases a refined grid of products with elegant typography and subtle glassmorphic effects on card headers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkOecqOQ68K5Z1OKBH0_94h8jJql1yuefubQ_zWKr4o8XDDJeZFIIuPnithtAlMAkL8K3vACFEp1T9czvML7bP-7bORx7Q4NPqca-Cdft_PXx-Dlg2QkbLziAQ6dqxo3nyq2Os_avhdk5Y_zIC3z2qG6gwJJ0GstbChvJon2rvZ82nRQaq6hHDMmHPilZFHM0tqi5PM1T-L9wD-oiRMlIlDOX4DL7cGFnrR0lgLFiToaULao1SV3zBegC1SDN3bMYellIyjO0lImQY"/>
+</div>
+<div class="p-8">
+<div class="flex gap-2 mb-4">
+<span class="px-3 py-1 bg-primary-container/20 text-primary text-xs rounded-full font-semibold">Next.js</span>
+<span class="px-3 py-1 bg-primary-container/20 text-primary text-xs rounded-full font-semibold">Stripe</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">E-Commerce Architecture</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                                A headless commerce solution focused on Core Web Vitals and SEO optimization with a seamless checkout flow.
+                            </p>
+<a class="inline-flex items-center gap-2 text-primary font-semibold hover:gap-4 transition-all" href="#">
+                                View Project
+                                <span class="material-symbols-outlined" data-icon="arrow_right_alt">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-7xl mx-auto px-gutter py-section-gap-lg text-center" id="contact">
+<div class="bg-gradient-to-br from-surface-container-high to-surface-container rounded-[2rem] p-12 md:p-24 border border-outline-variant relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[100px]"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary/10 blur-[100px]"></div>
+<h2 class="font-display-lg text-display-lg text-on-surface mb-6 relative z-10">Let's build something incredible together.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-xl mx-auto relative z-10">
+                    Currently open to new projects and frontend-focused roles. Drop me a message to discuss your next big idea.
+                </p>
+<div class="flex flex-col md:flex-row gap-4 justify-center relative z-10">
+<button class="bg-primary-container text-on-primary-container px-12 py-5 rounded-2xl font-headline-md text-headline-md hover:brightness-110 transition-all flex items-center justify-center gap-3">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+                        hemanth@bhat.dev
+                    </button>
+<button class="bg-surface-variant text-on-surface-variant px-12 py-5 rounded-2xl font-headline-md text-headline-md hover:bg-outline-variant transition-all flex items-center justify-center gap-3">
+<span class="material-symbols-outlined" data-icon="schedule">schedule</span>
+                        Book a Call
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant">
+<div class="max-w-7xl mx-auto px-gutter flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex flex-col items-center md:items-start gap-2">
+<div class="font-display-lg text-primary text-2xl flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="play_circle">play_circle</span>
+                    Flowbite
+                </div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">
+                    © 2024 Hemanth Bhat. Built with precision.
+                </p>
+</div>
+<div class="flex items-center gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="#">Github</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="#">Twitter</a>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container-high border border-outline-variant flex items-center justify-center text-on-surface-variant hover:text-primary transition-all" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+<span class="material-symbols-outlined" data-icon="arrow_upward">arrow_upward</span>
+</button>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 pb-safe bg-surface-container dark:bg-surface-container-high md:hidden z-50 border-t border-outline-variant shadow-lg">
+<a class="flex flex-col items-center justify-center text-primary bg-primary-container/20 rounded-xl px-3 py-1" href="#home">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-sm text-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant" href="#about">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-sm text-label-sm">About</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant" href="#projects">
+<span class="material-symbols-outlined" data-icon="work">work</span>
+<span class="font-label-sm text-label-sm">Projects</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant" href="#contact">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="font-label-sm text-label-sm">Contact</span>
+</a>
+</nav>
+<script>e
+        // Simple Intersection Observer for scroll reveal animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+
+        // Navigation smooth scroll highlighting
+        window.addEventListener('scroll', () => {
+            let current = "";
+            const sections = document.querySelectorAll("section");
+            const navLinks = document.querySelectorAll("nav a");
+
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach((a) => {
+                a.classList.remove("text-primary", "font-bold", "border-b-2", "border-primary");
+                a.classList.add("text-on-surface-variant");
+                if (a.getAttribute("href").includes(current)) {
+                    a.classList.add("text-primary", "font-bold", "border-b-2", "border-primary");
+                    a.classList.remove("text-on-surface-variant");
+                }
+            });
+        });
+    </script>
+</body></html>
+      </div>
+    </footer>
+  </body>
+</html>
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Projects | Hemanth Bhat</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#dae2fd",
+                    "outline-variant": "#434655",
+                    "surface-dim": "#0b1326",
+                    "on-tertiary-container": "#ffede6",
+                    "secondary-fixed-dim": "#adc6ff",
+                    "on-secondary-fixed": "#001a42",
+                    "primary-fixed-dim": "#b4c5ff",
+                    "surface-container-low": "#131b2e",
+                    "on-secondary": "#002e6a",
+                    "on-primary-fixed-variant": "#003ea8",
+                    "tertiary": "#ffb596",
+                    "surface-bright": "#31394d",
+                    "primary": "#b4c5ff",
+                    "on-secondary-container": "#e6ecff",
+                    "on-surface-variant": "#c3c6d7",
+                    "surface-variant": "#2d3449",
+                    "tertiary-fixed-dim": "#ffb596",
+                    "secondary": "#adc6ff",
+                    "on-error": "#690005",
+                    "secondary-container": "#0566d9",
+                    "on-tertiary-fixed-variant": "#7d2d00",
+                    "on-primary-fixed": "#00174b",
+                    "surface-container-highest": "#2d3449",
+                    "on-tertiary-fixed": "#360f00",
+                    "on-secondary-fixed-variant": "#004395",
+                    "background": "#0b1326",
+                    "on-error-container": "#ffdad6",
+                    "outline": "#8d90a0",
+                    "on-primary-container": "#eeefff",
+                    "primary-container": "#2563eb",
+                    "secondary-fixed": "#d8e2ff",
+                    "tertiary-fixed": "#ffdbcd",
+                    "inverse-surface": "#dae2fd",
+                    "on-background": "#dae2fd",
+                    "on-tertiary": "#581e00",
+                    "tertiary-container": "#bc4800",
+                    "surface-container": "#171f33",
+                    "on-primary": "#002a78",
+                    "inverse-on-surface": "#283044",
+                    "error-container": "#93000a",
+                    "surface-container-lowest": "#060e20",
+                    "inverse-primary": "#0053db",
+                    "surface-container-high": "#222a3d",
+                    "surface-tint": "#b4c5ff",
+                    "surface": "#0b1326",
+                    "primary-fixed": "#dbe1ff",
+                    "error": "#ffb4ab"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "element-gap": "1rem",
+                    "section-gap-lg": "8rem",
+                    "gutter": "1.5rem",
+                    "section-gap-md": "4rem",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Hanken Grotesk"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["Hanken Grotesk"],
+                    "display-lg-mobile": ["Hanken Grotesk"],
+                    "body-lg": ["Inter"],
+                    "label-sm": ["Inter"]
+            },
+            "fontSize": {
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-sm": ["14px", {"lineHeight": "1", "letterSpacing": "0.01em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0b1326;
+            color: #dae2fd;
+        }
+        .project-card:hover {
+            transform: translateY(-4px);
+            border-color: #2563eb;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="bg-background dark:bg-background border-b border-outline-variant dark:border-outline-variant fixed w-full top-0 z-50">
+<div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
+<div class="font-display-lg text-display-lg font-bold text-on-background dark:text-on-background">
+                Hemanth Bhat
+            </div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">About</a>
+<a class="text-primary dark:text-primary font-bold border-b-2 border-primary hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Projects</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#">Contact</a>
+</nav>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-medium scale-95 active:opacity-80 transition-all hover:brightness-110">
+                Resume
+            </button>
+</div>
+</header>
+<main class="pt-32 pb-24 px-gutter max-w-container-max mx-auto">
+<!-- Hero Section -->
+<section class="mb-section-gap-md">
+<h1 class="font-display-lg text-display-lg md:text-display-lg text-on-background mb-4">Crafted Solutions</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                A curated selection of technical explorations, architectural designs, and functional applications built with precision and modern engineering principles.
+            </p>
+</section>
+<!-- Projects Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Project Card 1 -->
+<div class="project-card flex flex-col bg-surface-container border border-outline-variant rounded-xl overflow-hidden transition-all duration-300">
+<div class="h-56 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="A sophisticated dark-themed financial dashboard interface featuring vibrant blue and cyan data visualizations, glassmorphic card elements, and clean typography. The scene is set in a high-tech developer workstation environment with soft ambient navy lighting, reflecting a professional and analytical atmosphere consistent with a modern corporate portfolio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPOCT0jZlWPjWR7HqkIEt82CprKknhqTRkOdnHDUCfqNzJ1j3BNegCXDNciLsjPxideHM2ZYxsB71wBoX2QGGmFm2ZrvqOaMcLjVCloAununuC1og-GrRhPOYkxxDpftp4jNLPjqDJwh5nvWqPePuOi7W75UFP2GEt3I95MIMHhSqkm5R-i0TYZGC0-5aWgat8Vzt2hPAFNW8huKBDhNJG9NUVdEbKOpSktpHxW8e-TuucZTxdm9BkXzhNj4tvBZ4baQsKGRF8pMTs"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Financial Dashboard</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                        A real-time analytics platform for tracking market trends, portfolio performance, and asset allocation with millisecond precision.
+                    </p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-[#dbeafe] text-[#2563eb] px-3 py-1 rounded-full font-label-sm text-label-sm">React</span>
+<span class="bg-[#dbeafe] text-[#2563eb] px-3 py-1 rounded-full font-label-sm text-label-sm">TypeScript</span>
+<span class="bg-[#dbeafe] text-[#2563eb] px-3 py-1 rounded-full font-label-sm text-label-sm">D3.js</span>
+</div>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="project-card flex flex-col bg-surface-container border border-outline-variant rounded-xl overflow-hidden transition-all duration-300">
+<div class="h-56 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="A clean and minimalist shopping cart UI design for a high-end fashion retailer. The visual features smooth transitions, elegant product photography with soft shadows, and a deep navy and white color palette. The aesthetic is ultra-modern and corporate, emphasizing usability and refined technical execution within a dark-mode ecosystem." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUki7sJkFdGaiVoMadzVRQrhUdrngr6C3ClzAhewQDDXywnksKOlyRAjd0RFeS4fpGPwYGbtyX2hKaWjAq0wD2OixVEtZnkF3BznZDO1zUB6vmQaja3gEyrSJUT2R2XN0SZDYbhGO41KWb2JUDqFTPPviXAN6Xr67rpgizmIXi_8C8Tor1XsVHi6gjjOfsotOBBNp9Dl61aPBraUNOXGO1_l2WvpTG8Yv-cWzpM-NUCnCsAahAgz4fAVazh4SJlHTzBeAJvmszCfpP"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Shopping Cart</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                        High-performance state management solution for complex retail flows, featuring optimistic UI updates and localized pricing logic.
+                    </p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-[#dbeafe] text-[#2563eb] px-3 py-1 rounded-full font-label-sm text-label-sm">Redux</span>
+<span class="bg-[#dbeafe] text-[#2563eb] px-3 py-1 rounded-full font-label-sm text-label-sm">Tailwind CSS</span>
+<span class="bg-[#dbeafe] text-[#2563eb] px-3 py-1 rounded-full font-label-sm text-label-sm">Next.js</span>
+</div>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="project-card flex flex-col bg-surface-container border border-outline-variant rounded-xl overflow-hidden transition-all duration-300">
+<div class="h-56 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="An intricate technical diagram of a microservices architecture shown in a stylized 3D perspective. Glowing lines connect various nodes representing services, databases, and API gateways. The color scheme is dominated by deep navy blues and vibrant primary blue highlights, creating a sense of complex systems engineering and robust digital infrastructure." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHWl4CITNCs_oIOjSPi7MFYfTOw1WZpHx3hmjiEtP9LHq4tvJM3aoYQGZl5a98Ko7Lj2BTupkKTrT_F0hidsakIQr7N-HwVqcnjeIfnhLM3HlhEFfKy3AoC3bledXNsl-ueF5gk0JO0RgOJ17tbVYBwzjuNWSiyPfmGB1t6oGZHX2Lj92j_dA7i3UamyhZpOmNbUewKd7Z8tSYXcoJV9MAR78nx2aE8Fd6wtWbspnwrrP3MCg3uMdvq4ieCYq1tcbt71idJrd3S0so"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">E-Commerce Architecture</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                        Scalable microservices infrastructure design for enterprise-level commerce, handling millions of concurrent requests across global nodes.
+                    </p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-[#dbeafe] text-[#2563eb] px-3 py-1 rounded-full font-label-sm text-label-sm">Kubernetes</span>
+<span class="bg-[#dbeafe] text-[#2563eb] px-3 py-1 rounded-full font-label-sm text-label-sm">Go</span>
+<span class="bg-[#dbeafe] text-[#2563eb] px-3 py-1 rounded-full font-label-sm text-label-sm">GraphQL</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-gutter max-w-container-max mx-auto gap-8">
+<div class="flex flex-col items-center md:items-start">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary mb-2">
+                    Hemanth Bhat
+                </div>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Hemanth Bhat. Built with precision.</p>
+</div>
+<div class="flex items-center space-x-6">
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-sm text-label-sm hover:text-primary dark:hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Github</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-sm text-label-sm hover:text-primary dark:hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-sm text-label-sm hover:text-primary dark:hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Twitter</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple micro-interaction for cards
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.borderColor = '#2563eb';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.borderColor = '#434655';
+            });
+        });
+    </script>
+</body></html>
