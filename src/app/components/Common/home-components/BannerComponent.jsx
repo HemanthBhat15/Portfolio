@@ -37,8 +37,8 @@ function BannerComponent() {
 
           <a
             className="w-full sm:w-auto px-8 py-3.5 rounded-lg font-semibold border border-outline-variant text-on-surface hover:bg-surface-container transition-all flex items-center justify-center gap-2"
-            href="/Hemanth-Bhat-Resume.pdf"
-            download="Hemanth-Bhat-Resume.pdf"
+            href="/Hemanth_Bhat_CV.pdf"
+            download="Hemanth_Bhat_CV.pdf"
           >
             <Download className="mr-2 inline h-4 w-4" strokeWidth={2} />
             Download CV
